@@ -1,37 +1,11 @@
-/*!
- * (The MIT License)
- * 
- * Copyright (c) Handsoncode sp. z o.o. <hello@handsoncode.net>
- * 
- * Permission is hereby granted, free of charge, to any person obtaining
- * a copy of this software and associated documentation files (the
- * 'Software'), to deal in the Software without restriction, including
- * without limitation the rights to use, copy, modify, merge, publish,
- * distribute, sublicense, and/or sell copies of the Software, and to
- * permit persons to whom the Software is furnished to do so, subject to
- * the following conditions:
- * 
- * The above copyright notice and this permission notice shall be
- * included in all copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
- * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
- * CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
- * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
- * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- * 
- * Version: 4.1.1 (built at Tue Dec 31 2019 15:59:48 GMT+0530 (India Standard Time))
- */
-(function (global, factory) {
-typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('handsontable'), require('vue')) :
-typeof define === 'function' && define.amd ? define(['exports', 'handsontable', 'vue'], factory) :
-(global = global || self, factory((global.Handsontable = global.Handsontable || {}, global.Handsontable.vue = {}), global.Handsontable, global.Vue));
-}(this, (function (exports, Handsontable, Vue) { 'use strict';
+'use strict';
 
-Handsontable = Handsontable && Handsontable.hasOwnProperty('default') ? Handsontable['default'] : Handsontable;
-Vue = Vue && Vue.hasOwnProperty('default') ? Vue['default'] : Vue;
+Object.defineProperty(exports, '__esModule', { value: true });
+
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var Handsontable = _interopDefault(require('handsontable'));
+var Vue = _interopDefault(require('vue'));
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -1529,8 +1503,3 @@ normalizeComponent_1({}, __vue_inject_styles__$2, __vue_script__$2, __vue_scope_
 exports.HotColumn = HotColumn;
 exports.HotTable = HotTable;
 exports.default = HotTable$1;
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-})));
-//# sourceMappingURL=vue-handsontable.js.map

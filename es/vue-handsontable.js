@@ -1,37 +1,5 @@
-/*!
- * (The MIT License)
- * 
- * Copyright (c) Handsoncode sp. z o.o. <hello@handsoncode.net>
- * 
- * Permission is hereby granted, free of charge, to any person obtaining
- * a copy of this software and associated documentation files (the
- * 'Software'), to deal in the Software without restriction, including
- * without limitation the rights to use, copy, modify, merge, publish,
- * distribute, sublicense, and/or sell copies of the Software, and to
- * permit persons to whom the Software is furnished to do so, subject to
- * the following conditions:
- * 
- * The above copyright notice and this permission notice shall be
- * included in all copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
- * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
- * CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
- * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
- * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- * 
- * Version: 4.1.1 (built at Tue Dec 31 2019 15:59:48 GMT+0530 (India Standard Time))
- */
-(function (global, factory) {
-typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('handsontable'), require('vue')) :
-typeof define === 'function' && define.amd ? define(['exports', 'handsontable', 'vue'], factory) :
-(global = global || self, factory((global.Handsontable = global.Handsontable || {}, global.Handsontable.vue = {}), global.Handsontable, global.Vue));
-}(this, (function (exports, Handsontable, Vue) { 'use strict';
-
-Handsontable = Handsontable && Handsontable.hasOwnProperty('default') ? Handsontable['default'] : Handsontable;
-Vue = Vue && Vue.hasOwnProperty('default') ? Vue['default'] : Vue;
+import Handsontable from 'handsontable';
+import Vue from 'vue';
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -1135,7 +1103,7 @@ Component.registerHooks = function registerHooks(keys) {
     $internalHooks.push.apply($internalHooks, keys);
 };
 
-exports.BaseEditorComponent =
+var BaseEditorComponent =
 /*#__PURE__*/
 function (_Vue) {
   _inherits(BaseEditorComponent, _Vue);
@@ -1501,8 +1469,8 @@ function (_Vue) {
   return BaseEditorComponent;
 }(Vue);
 
-exports.BaseEditorComponent = __decorate([Component({})], exports.BaseEditorComponent);
-var script = exports.BaseEditorComponent;
+BaseEditorComponent = __decorate([Component({})], BaseEditorComponent);
+var script = BaseEditorComponent;
 
 /* script */
 var __vue_script__$2 = script;
@@ -1526,11 +1494,5 @@ var __vue_is_functional_template__$2 = undefined;
 
 normalizeComponent_1({}, __vue_inject_styles__$2, __vue_script__$2, __vue_scope_id__$2, __vue_is_functional_template__$2, __vue_module_identifier__$2, undefined, undefined);
 
-exports.HotColumn = HotColumn;
-exports.HotTable = HotTable;
-exports.default = HotTable$1;
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-})));
-//# sourceMappingURL=vue-handsontable.js.map
+export default HotTable$1;
+export { BaseEditorComponent, HotColumn, HotTable };
